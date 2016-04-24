@@ -6,6 +6,7 @@
 
 package sshpower;
 
+import java.util.Locale;
 import javax.swing.ImageIcon;
 
 /**
@@ -33,76 +34,266 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        image = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        image = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Devices-computer-laptop-icon.png"))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(40, 181, 223));
+        jPanel1.setForeground(new java.awt.Color(254, 254, 254));
 
-        jButton1.setText("jButton1");
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/zurdadas_1.png"))); // NOI18N
 
-        jButton2.setText("jButton1");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setText("jButton3");
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("sshpower/Bundle"); // NOI18N
+        jButton3.setText(bundle.getString("Principal.jButton3.text")); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
+        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Devices-computer-laptop-icon.png"))); // NOI18N
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/derecha.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/izquierda.png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/ingla.png"))); // NOI18N
+        jLabel3.setText(bundle.getString("Principal.jLabel3.text")); // NOI18N
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        jLabel3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jLabel3KeyPressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(319, 319, 319)
+                        .addComponent(image))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(263, 263, 263)
+                        .addComponent(jLabel2)
+                        .addGap(34, 34, 34)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(image)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 158, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(116, 116, 116)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 130, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(178, 178, 178))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(284, 284, 284)
-                .addComponent(image)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(192, 192, 192)
-                .addComponent(image)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
-                .addContainerGap(138, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-
-            image.setIcon(x.imag());
-            x.incremento();
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       this.setVisible(false); //this will close frame i.e. NewJFrame
-       new CPC().setVisible(true);
+        this.setVisible(false);
+         if(String.valueOf(Locale.getDefault()).equals("es_ES"))
+         {
+            if(jButton3.getText().equals("PC-Portatil"))
+            {
+               //this will close frame i.e. NewJFrame
+                new Portatil().setVisible(true);
+
+            }
+            if(jButton3.getText().equals("PC-Salon"))
+            {
+               //this will close frame i.e. NewJFrame
+                new CPC().setVisible(true);
+            }
+            if(jButton3.getText().equals("Raspberry pi"))
+            {
+                new Raspi().setVisible(true);
+               //this will close frame i.e. NewJFrame
+
+            }
+         }
+         else
+         {
+            if(jButton3.getText().equals("PC-laptop"))
+            {
+               //this will close frame i.e. NewJFrame
+                new Portatil().setVisible(true);
+
+            }
+            if(jButton3.getText().equals("PC-Living-room"))
+            {
+               //this will close frame i.e. NewJFrame
+                new CPC().setVisible(true);
+            }
+            if(jButton3.getText().equals("Raspberry pi"))
+            {
+                new Raspi().setVisible(true);
+               //this will close frame i.e. NewJFrame
+
+            }
+         }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        if(x.getEstado()==-1)
+        {
+            x.setEstado(2);
+        }
+         if(String.valueOf(Locale.getDefault()).equals("es_ES"))
+         {
+            if(x.getEstado()==0)
+            {
+                jButton3.setText("PC-Portatil");
+            }
+            if(x.getEstado()==1)
+            {
+                jButton3.setText("PC-Salon");
+
+            }
+            if(x.getEstado()==2)
+            {
+                jButton3.setText("Raspberry pi");
+            }
+            image.setIcon(x.imag());
+            x.incremento();
+          }
+         else
+         {
+           if(x.getEstado()==0)
+            {
+                jButton3.setText("PC-laptop");
+            }
+            if(x.getEstado()==1)
+            {
+                jButton3.setText("PC-Living-room");
+
+            }
+            if(x.getEstado()==2)
+            {
+                jButton3.setText("Raspberry pi");
+            }
+            image.setIcon(x.imag());
+            x.incremento();  
+         }
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+        if(x.getEstado()==-1)
+        {
+            x.setEstado(2);
+        }
+         if(String.valueOf(Locale.getDefault()).equals("es_ES"))
+         {
+            if(x.getEstado()==0)
+            {
+                jButton3.setText("PC-Portatil");
+            }
+            if(x.getEstado()==1)
+            {
+                jButton3.setText("PC-Salon");
+
+            }
+            if(x.getEstado()==2)
+            {
+                jButton3.setText("Raspberry pi");
+            }
+            image.setIcon(x.imag());
+          
+          }
+         else
+         {
+           if(x.getEstado()==0)
+            {
+                jButton3.setText("PC-laptop");
+            }
+            if(x.getEstado()==1)
+            {
+                jButton3.setText("PC-Living-room");
+
+            }
+            if(x.getEstado()==2)
+            {
+                jButton3.setText("Raspberry pi");
+            }
+            image.setIcon(x.imag());
+          
+         }
+         image.setIcon(x.imag());
+         x.setEstado(x.getEstado()-1);
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel3KeyPressed
+        Locale.setDefault(new Locale ("en","GB"));
+        System.out.println(Locale.getDefault());
+
+        this.setVisible(false); //this will close frame i.e. NewJFrame
+
+        new Principal().setVisible(true);
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel3KeyPressed
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        Locale.setDefault(new Locale ("en","GB"));
+        System.out.println(Locale.getDefault());
+ 
+        this.setVisible(false); //this will close frame i.e. NewJFrame
+
+        new Principal().setVisible(true);
+                // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -141,8 +332,11 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel image;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

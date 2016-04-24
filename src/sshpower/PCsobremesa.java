@@ -11,5 +11,12 @@ package sshpower;
  * @author zurdotsg
  */
 public class PCsobremesa {
-    
+  private int temperatura;
+  private String wifi;
+  private float ram;
+  private float disco;
+  private String procesador;
+  private float grafica;
+  private String so;
+  
 }
